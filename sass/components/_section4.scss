@@ -1,0 +1,88 @@
+.section:nth-child(4) {
+  background-color: var(--light-bg-color);
+}
+.section4-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--main-title-color);
+}
+.section4-menu-list {
+  display: flex;
+  column-gap: 30px;
+}
+.section4-menu-item {
+  background-color: white;
+  box-shadow: 0px 1px 1px rgb(72, 72, 72);
+  border-radius: 2px;
+}
+.section4-menu-img {
+  width: 270px;
+  height: 260px;
+  background: url("path_to_image");
+  margin-bottom: 30px;
+}
+.section4-menu-title {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--main-title-color);
+}
+.section4-menu-p {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-text-color);
+}
+.team-media {
+  fill: #afb1b8;
+  padding: 12px;
+  position: relative;
+}
+.team-media:hover {
+  fill: #ffffff;
+  background-color: #ffffff00;
+}
+.svg-team-list {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  column-gap: 10px;
+}
+.svg-team{
+    width: 44px;
+  height: 44px;
+  position: relative;
+  border-radius: 50%;
+}
+.svg-team:hover {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.svg-client-list {
+  display: flex;
+  margin-bottom: 94px;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1190px;
+}
+.svg-client {
+  border: 1.5px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.svg-client:hover {
+  border: 1.5px solid #2196f3;
+  fill: #2196f3;
+}

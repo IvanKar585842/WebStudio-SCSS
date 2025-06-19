@@ -1,0 +1,47 @@
+.section5-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.group-icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.group-icon:hover,
+.group-icon1:hover,
+.group-icon2:hover,
+.group-icon3:hover,
+.group-icon4:hover,
+.group-icon5:hover {
+  fill: #2196f3;
+}
+.group-icon {
+  padding: 23px 64px;
+}
+.group-icon1 {
+  padding: 20px 65px;
+  fill: #afb1b8;
+}
+.group-icon2 {
+  padding: 25px 62px;
+  fill: #afb1b8;
+}
+.group-icon3 {
+  padding: 25px 42px;
+  fill: #afb1b8;
+}
+.group-icon4 {
+  padding: 23px 53px;
+  fill: #afb1b8;
+}
+.group-icon5 {
+  padding: 23px 38px;
+  fill: #afb1b8;
+}

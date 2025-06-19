@@ -1,0 +1,87 @@
+.header1 {
+  border: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0 0 10px grey;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  width: 145px;
+  height: 31px;
+  margin-right: 94px;
+}
+
+.nav1-menu-list {
+  display: flex;
+  column-gap: 50px;
+}
+.header1-menu-list {
+  display: flex;
+  column-gap: 50px;
+  margin-left: 318px;
+}
+.nav1-menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  position: relative;
+}
+.nav1-menu-link::after {
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav1-menu-link:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  position: absolute;
+  top: 45px;
+}
+.header1-menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  display: flex;
+  color: #757575;
+}
+.header1-mail,
+.header1-tel {
+  color: #757575;
+  margin-left: 10px;
+}
+.header1-mail:hover {
+  color: #2196f3;
+}
+.header1-tel .tel-icon {
+  fill: #757575;
+}
+.header1-mail .mail-icon {
+  fill: #757575;
+}
+.header1-tel:hover .tel-icon {
+  fill: #2196f3;
+}
+
+.header1-mail:hover .mail-icon {
+  fill: #2196f3;
+}

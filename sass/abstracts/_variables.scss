@@ -1,0 +1,35 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+  --main-title-color: #212121;
+  --main-text-color: #757575;
+  --hover-color: #2196f3;
+  --dark-bg-color: #2f303a;
+  --light-bg-color: #f5f4fa;
+  --secondary-text-color: #ffffff;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-family);
+  scroll-behavior: smooth;
+}
+a {
+  color: black;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+a:hover {
+  color: var(--hover-color);
+}
+button {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+button:hover {
+  color: var(--secondary-text-color);
+  background-color: var(--hover-color);
+}

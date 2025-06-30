@@ -1,5 +1,5 @@
-.section5-title {
-  font-family: var(--font-family);
+.section5__title {
+  font-family: $font-family;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -8,7 +8,33 @@
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.group-icon {
+.svg-client__list {
+  display: flex;
+  margin-bottom: 94px;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1190px;
+  .svg-client {
+    border: 1.5px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border: 1.5px solid #2196f3;
+      fill: #2196f3;
+    }
+  }
+}
+.group-icon,
+.group-icon1,
+.group-icon2,
+.group-icon3,
+.group-icon4,
+.group-icon5 {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;

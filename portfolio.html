@@ -18,233 +18,241 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="body1">
-    <header class="header1">
-      <div class="container header-container">
-        <a class="logo" href="./index.html" style="color: #2196f3"
-          >Web<span class="span" style="color: black">Studio</span></a
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="/" style="color: #2196f3"
+          >Web<span class="logo__span" style="color: black">Studio</span></a
         >
-        <nav class="nav1">
-          <ul class="nav1-menu-list">
-            <li class="nav1-menu-item">
-              <a class="nav1-menu-link" href="./index.html">Студія</a>
+        <nav class="nav">
+          <ul class="nav__menu">
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="./index.html">Студія</a>
             </li>
-            <li class="nav1-menu-item">
-              <a class="nav1-menu-link" href="/">Портфоліо</a>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="nav1-menu-item">
-              <a class="nav1-menu-link" href="#">Контакти</a>
+            <li class="nav__menu__item">
+              <a class="nav__menu__link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header1-menu-list">
-          <li class="header1-menu-item">
-            <a class="header1-mail" href="mailto:info@devstudio"
-              >info@devstudio</a
+        <ul class="header__menu">
+          <li class="header__menu__item">
+            <a class="header__mail" href="mailto:info@devstudio">
+              <svg class="mail__icon" width="16" height="12">
+                <use href="./icons/symbol.svg#icon-envelope-hover-1"></use>
+              </svg>
+              info@devstudio</a
             >
           </li>
-          <li class="header1-menu-item">
-            <a class="header1-tel" href="tel+380961111111">+38 096 111 11 11</a>
+          <li class="header__menu__item">
+            <a class="header__tel" href="tel+380961111111">
+              <svg class="tel__icon" width="10" height="16">
+                <use href="./icons/symbol.svg#icon-smartphone-1"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main class="main">
       <section class="section6">
-        <div class="container portfolio-container">
-          <h2 class="section-title">Блоки</h2>
-          <ul class="menu-list1">
-            <li class="menu-item1">
-              <button type="button" class="menu-button1">Усі</button>
+        <div class="container portfolio__container">
+          <h2 class="section__title">Блоки</h2>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <button type="button" class="menu__button1">Усі</button>
             </li>
-            <li class="menu-item2">
-              <button type="button" class="menu-button2">Веб-сайти</button>
+            <li class="menu__item">
+              <button type="button" class="menu__button2">Веб-сайти</button>
             </li>
-            <li class="menu-item3">
-              <button type="button" class="menu-button3">Додатки</button>
+            <li class="menu__item">
+              <button type="button" class="menu__button3">Додатки</button>
             </li>
-            <li class="menu-item4">
-              <button type="button" class="menu-button4">Дизайн</button>
+            <li class="menu__item">
+              <button type="button" class="menu__button4">Дизайн</button>
             </li>
-            <li class="menu-item5">
-              <button type="button" class="menu-button5">Маркетинг</button>
+            <li class="menu__item">
+              <button type="button" class="menu__button5">Маркетинг</button>
             </li>
           </ul>
-          <ul class="menu-list2">
-            <li class="menu1-item">
-              <div class="overlay">
+          <ul class="menu__cards__list">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(7).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Технокряк</h3>
-              <p class="menu1-item-p">Веб-сайт</p>
+              <h3 class="menu__cards__item__title">Технокряк</h3>
+              <p class="menu__cards__item__text">Веб-сайт</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(8).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Постер New Orlean vs Golden Star</h3>
-              <p class="menu1-item-p">Дизайн</p>
+              <h3 class="menu__cards__item__title">Постер New Orlean vs Golden Star</h3>
+              <p class="menu__cards__item__text">Дизайн</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(9).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Ресторан Seafood</h3>
-              <p class="menu1-item-p">Додаток</p>
+              <h3 class="menu__cards__item__title">Ресторан Seafood</h3>
+              <p class="menu__cards__item__text">Додаток</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(10).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Проєкт Prime</h3>
-              <p class="menu1-item-p">Маркетинг</p>
+              <h3 class="menu__cards__item__title">Проєкт Prime</h3>
+              <p class="menu__cards__item__text">Маркетинг</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(11).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Проєкт Boxes</h3>
-              <p class="menu1-item-p">Додаток</p>
+              <h3 class="menu__cards__item__title">Проєкт Boxes</h3>
+              <p class="menu__cards__item__text">Додаток</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(12).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Inspiration has no Borders</h3>
-              <p class="menu1-item-p">Веб-сайт</p>
+              <h3 class="menu__cards__item__title">Inspiration has no Borders</h3>
+              <p class="menu__cards__item__text">Веб-сайт</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(13).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Видання Limited Edition</h3>
-              <p class="menu1-item-p">Дизайн</p>
+              <h3 class="menu__cards__item__title">Видання Limited Edition</h3>
+              <p class="menu__cards__item__text">Дизайн</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(14).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Проєкт LAB</h3>
-              <p class="menu1-item-p">Маркетинг</p>
+              <h3 class="menu__cards__item__title">Проєкт LAB</h3>
+              <p class="menu__cards__item__text">Маркетинг</p>
             </li>
-            <li class="menu1-item">
-              <div class="overlay">
+            <li class="menu__cards__item">
+              <div class="cards__overlay">
                 <img
-                  class="menu-img"
+                  class="menu__cards__img"
                   src="./images1/img(15).jpg"
                   alt="Технокряк"
                 />
-                <p class="overlay-text">
+                <p class="overlay__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu1-item-title">Growing Business</h3>
-              <p class="menu1-item-p">Додаток</p>
+              <h3 class="menu__cards__item__title">Growing Business</h3>
+              <p class="menu__cards__item__text">Додаток</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer1">
-      <div class="container footer1-container">
-        <div class="footer-div">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__div">
           <a class="logo1" href="/" style="color: #2196f3"
             >Web<span class="span" style="color: white">Studio</span></a
           >
-          <address class="address1">
-            <ul class="footer1-menu-list">
+          <address class="address">
+            <ul class="footer__menu__list">
               <li>
-                <p class="footer1-item">м. Київ, пр-т Лесі Українки, 26</p>
+                <p class="footer__item">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
-              <li class="footer1-item1">
-                <a class="footer1-mail" href="mailto:info@devstudio"
+              <li class="footer__item1">
+                <a class="footer__mail" href="mailto:info@devstudio"
                   >info@devstudio</a
                 >
               </li>
-              <li class="footer1-item2">
-                <a class="footer1-tel" href="tel+380961111111"
+              <li class="footer__item2">
+                <a class="footer__tel" href="tel+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-medias">
-          <h3 class="footer-title">приєднуйтесь</h3>
-          <ul class="svg-team-list">
+        <div class="footer__medias">
+          <h3 class="footer__title">приєднуйтесь</h3>
+          <ul class="svg-team__list">
             <li class="svg-team1">
               <svg class="team-media1" width="44" height="44">
                 <use href="./icons/symbol.svg#icon-instagram-2"></use>
@@ -267,15 +275,15 @@
             </li>
           </ul>
         </div>
-        <div class="footer-sub">
-          <h3 class="sub-h">Підпишіться на розсилку</h3>
-          <div class="footer-fill">
-            <label class="footer-label" for="">
-              <input class="footer-input" placeholder="E-mail" type="email" />
+        <div class="footer__sub">
+          <h3 class="sub__title">Підпишіться на розсилку</h3>
+          <div class="footer__fill">
+            <label class="footer__label" for="">
+              <input class="footer__input" placeholder="E-mail" type="email" />
             </label>
-            <div class="send-div">
-              <button class="send-button">Підписатися</button>
-              <svg class="footer-send" width="20" height="20">
+            <div class="footer__send">
+              <button class="footer__send__button">Підписатися</button>
+              <svg class="footer__send__svg" width="20" height="20">
                 <use href="./icons/symbol.svg#icon-send"></use>
               </svg>
             </div>

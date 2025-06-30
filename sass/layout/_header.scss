@@ -1,4 +1,4 @@
-.header1 {
+.header {
   border: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -13,75 +13,81 @@
   top: 0;
   right: 0;
   left: 0;
-}
-.logo {
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  width: 145px;
-  height: 31px;
-  margin-right: 94px;
+
+  .logo {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    width: 145px;
+    height: 31px;
+    margin-right: 94px;
+  }
 }
 
-.nav1-menu-list {
+.nav__menu {
   display: flex;
   column-gap: 50px;
+
+  .nav__menu__item {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    position: relative;
+  }
 }
-.header1-menu-list {
-  display: flex;
-  column-gap: 50px;
-  margin-left: 318px;
-}
-.nav1-menu-item {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  margin-top: 7px;
-  margin-bottom: 8px;
-  position: relative;
-}
-.nav1-menu-link::after {
-  transition-property: background-color;
+.nav__menu__link::after {
+  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav1-menu-link:hover::after {
-  content: "";
+  content: '';
   display: block;
   width: 100%;
   height: 4px;
   background-color: #2196f3;
   position: absolute;
   top: 45px;
+  opacity: 0;
 }
-.header1-menu-item {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  margin-top: 7px;
-  margin-bottom: 8px;
+.nav__menu__link::after:hover {
+  opacity: 1;
+}
+.header__menu {
   display: flex;
-  color: #757575;
+  column-gap: 50px;
+  margin-left: 318px;
+
+  .header__menu__item {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    display: flex;
+    color: #757575;
+  }
 }
-.header1-mail,
-.header1-tel {
+
+.header__mail,
+.header__tel {
   color: #757575;
   margin-left: 10px;
 }
-.header1-mail:hover {
+.header__mail:hover {
   color: #2196f3;
 }
-.header1-tel .tel-icon {
+.header__tel .tel__icon {
   fill: #757575;
 }
-.header1-mail .mail-icon {
+.header__mail .mail__icon {
   fill: #757575;
 }
-.header1-tel:hover .tel-icon {
+.header__tel:hover .tel__icon {
   fill: #2196f3;
 }
 
-.header1-mail:hover .mail-icon {
+.header__mail:hover .mail__icon {
   fill: #2196f3;
 }

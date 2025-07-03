@@ -57,7 +57,7 @@
 .header__menu {
   display: flex;
   column-gap: 50px;
-  margin-left: 318px;
+  margin-left: 298px;
 
   .header__menu__item {
     font-weight: 500;
@@ -90,4 +90,10 @@
 
 .header__mail:hover .mail__icon {
   fill: #2196f3;
+}
+.mail__icon{
+  margin-right: 10px;
+}
+.tel__icon{
+  margin-right: 10px;
 }

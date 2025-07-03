@@ -111,17 +111,15 @@
     margin-top: 20px;
     margin-left: 12px;
     padding-left: 24px;
+    display: flex;
+    align-items: center;
     .footer__send__button {
       font-family: $font-family;
       font-weight: 700;
       font-size: 16px;
       line-height: 1.87;
       letter-spacing: 0.06em;
-      text-align: center;
       color: #fff;
-    }
-    .footer__send__svg {
-      margin-top: 10px;
     }
   }
 }

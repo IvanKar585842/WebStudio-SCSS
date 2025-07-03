@@ -12,59 +12,19 @@
   column-gap: 8px;
   margin-bottom: 50px;
   .menu__button1 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    text-align: center;
-    width: 73px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
+    @include menu__button(73px);
   }
   .menu__button2 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    text-align: center;
-    width: 125px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
+    @include menu__button(125px);
   }
   .menu__button3 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    text-align: center;
-    width: 112px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
+    @include menu__button(112px);
   }
   .menu__button4 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    text-align: center;
-    width: 103px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
+    @include menu__button(103px);
   }
   .menu__button5 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    text-align: center;
-    width: 130px;
-    height: 38px;
-    border: none;
-    border-radius: 4px;
+    @include menu__button(130px);
   }
 }
 

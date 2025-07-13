@@ -42,18 +42,19 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  position: absolute;
-  top: 45px;
   opacity: 0;
+  .nav__menu__link::after:hover {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    position: absolute;
+    top: 10px;
+    opacity: 1;
+  }
 }
-.nav__menu__link::after:hover {
-  opacity: 1;
-}
+
 .header__menu {
   display: flex;
   column-gap: 50px;
@@ -91,9 +92,9 @@
 .header__mail:hover .mail__icon {
   fill: #2196f3;
 }
-.mail__icon{
+.mail__icon {
   margin-right: 10px;
 }
-.tel__icon{
+.tel__icon {
   margin-right: 10px;
 }

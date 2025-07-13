@@ -33,6 +33,9 @@
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
       margin-bottom: 9px;
+      &:hover {
+        color: $hover-color;
+      }
     }
   }
   .footer__item2 {
@@ -44,6 +47,9 @@
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
+      &:hover {
+        color: $hover-color;
+      }
     }
   }
 }

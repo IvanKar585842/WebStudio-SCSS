@@ -2,18 +2,23 @@
   @extend %container;
   padding-left: 15px;
   padding-right: 15px;
-  @media screen and (min-width:480px) {
-    min-width:480px;
+  width: 471px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  @media screen and (min-width:768px) {
-    min-width:768px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
-  @media screen and (min-width:1200px) {
-    min-width:1200px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 .header__container {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section1__container {
   display: flex;

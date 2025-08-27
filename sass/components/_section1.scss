@@ -1,6 +1,6 @@
 .section1 {
   margin-top: 80px;
-  max-width: 1600px;
+  max-width: 400px;
   height: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -10,11 +10,11 @@
 
   .section1__title {
     color: $secondary-text-color;
-    width: 696px;
-    height: 120px;
+    width: 360px;
+    height: 84px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
@@ -26,16 +26,45 @@
     background: $hover-color;
     color: $secondary-text-color;
     border-radius: 4px;
-    width: 216px;
+    width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1cm;
     border: none;
     padding-top: 10px;
     border-radius: 5px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section1 {
+    max-width: 480px;
+  }
+  .section1__button {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section1 {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section1 {
+    max-width: 1600px;
+  }
+  .section1__title {
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  .section1__button {
+    width: 216px;
+    height: 50px;
   }
 }

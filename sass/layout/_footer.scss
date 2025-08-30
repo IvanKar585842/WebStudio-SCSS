@@ -1,9 +1,11 @@
+
 .footer {
   background-color: $dark-bg-color;
 }
 .footer__div {
   display: flex;
   flex-direction: column;
+  margin-bottom: 60px;
   .logo1 {
     font-family: $second-family;
     font-weight: 700;
@@ -12,6 +14,8 @@
     width: 145px;
     height: 31px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer__item {
     font-weight: 400;
@@ -19,13 +23,20 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
-    margin-bottom: 9px;
     width: 231px;
     height: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
   }
   .footer__item1 {
     width: 231px;
     height: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
     .footer__mail {
       font-weight: 400;
       font-size: 14px;
@@ -41,6 +52,10 @@
   .footer__item2 {
     width: 231px;
     height: 21px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
     .footer__tel {
       font-weight: 400;
       font-size: 14px;
@@ -54,7 +69,7 @@
   }
 }
 .footer__medias {
-  margin-left: 70px;
+  margin-bottom: 60px;
   .footer__title {
     font-family: $font-family;
     font-weight: 700;
@@ -64,7 +79,17 @@
     color: #fff;
     margin-left: 30px;
     margin-bottom: 20px;
+    width: 146px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+.svg-team__list {
+  width: 207px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .svg-team1 {
   width: 44px;
@@ -87,7 +112,7 @@
   }
 }
 .footer__sub {
-  margin-left: 93px;
+  margin-left: 16px;
   .sub__title {
     font-family: $font-family;
     font-weight: 700;
@@ -95,18 +120,24 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #fff;
+    width: 207px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .footer__fill {
   display: flex;
+  flex-direction: column;
   .footer__input {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer__send {
     border-radius: 4px;
@@ -115,7 +146,8 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2196f3;
     margin-top: 20px;
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 24px;
     display: flex;
     align-items: center;
@@ -129,5 +161,40 @@
     }
   }
 }
-@media screen and (min-width: 480px){}
-@media screen and (min-width: 768px){}
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+  .footer__div {
+    margin-left: 0;
+    .logo {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .footer__item {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .footer__item1 {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .footer__medias {
+    margin-left: 70px;
+  }
+  .footer__sub {
+    margin-left: 93px;
+  }
+  .footer__fill {
+    display: flex;
+  }
+  .footer__input {
+    width: 358px;
+  }
+  .footer__send {
+    margin-left: 12px;
+  }
+}

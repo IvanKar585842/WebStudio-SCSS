@@ -10,11 +10,13 @@
 }
 .svg-client__list {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 94px;
   column-gap: 30px;
+  width: 480px;
+  row-gap: 30px;
   margin-left: auto;
-  margin-right: auto;
-  width: 1190px;
+  
   .svg-client {
     border: 1.5px solid #afb1b8;
     border-radius: 4px;
@@ -71,5 +73,15 @@
   padding: 23px 38px;
   fill: #afb1b8;
 }
-@media screen and (min-width: 480px){}
-@media screen and (min-width: 480px){}
+@media screen and (min-width: 768px){
+  .svg-client__list{
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .svg-client__list{
+    flex-wrap: nowrap;
+    width: 1190px;
+    margin-right: auto;
+  }
+}

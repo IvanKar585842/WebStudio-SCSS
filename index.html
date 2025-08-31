@@ -58,11 +58,28 @@
             >
           </li>
         </ul>
-        <a href="" class="header__mobile-menu">
-          <svg class="menu-mobile" width="24px" height="16px">
-            <use href="./icons/symbol.svg#icon-menu-mobile"></use>
+
+        <button
+          href=""
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="open-mobile-menu"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
-        </a>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -139,9 +156,12 @@
         <div class="container section2__container">
           <ul class="section2__menu__list">
             <li class="section2__menu__item">
-              <svg class="svg">
-                <use href="./icons/symbol-defs.svg#icon-schedule"></use>
-              </svg>
+              <img
+                class="section2__img"
+                srcset="./images1/group1-1x.jpg 1x, ./images1/group1-2x.jpg 2x"
+                src="./images1/group1-1x.jpg"
+                alt="antenna"
+              />
               <h3 class="section2__menu__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="section2__menu__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -149,9 +169,12 @@
               </p>
             </li>
             <li class="section2__menu__item">
-              <svg class="svg">
-                <use href="./icons/symbol-defs.svg#icon-astronaut"></use>
-              </svg>
+              <img
+                class="section2__img"
+                srcset="./images1/group2-1x.jpg 1x, ./images1/group2-2x.jpg 2x"
+                src="./images1/group2-1x.jpg"
+                alt="time"
+              />
               <h3 class="section2__menu__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="section2__menu__text">
                 Завдання організації, особливо рамки і місце навчання кадрів
@@ -159,18 +182,24 @@
               </p>
             </li>
             <li class="section2__menu__item">
-              <svg class="svg">
-                <use href="./icons/symbol-defs.svg#icon-time"></use>
-              </svg>
+              <img
+                class="section2__img"
+                srcset="./images1/group3-1x.jpg 1x, ./images1/group3-2x.jpg 2x"
+                src="./images1/group3-1x.jpg"
+                alt="schedule"
+              />
               <h3 class="section2__menu__title">ПЛАНУВАННЯ</h3>
               <p class="section2__menu__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="section2__menu__item">
-              <svg class="svg">
-                <use href="./icons/symbol-defs.svg#icon-antenna"></use>
-              </svg>
+              <img
+                class="section2__img"
+                srcset="./images1/group4-1x.jpg 1x, ./images1/group4-2x.jpg 2x"
+                src="./images1/group4-1x.jpg"
+                alt="astronaut"
+              />
               <h3 class="section2__menu__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="section2__menu__text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -187,7 +216,11 @@
             <li class="section3__menu__item">
               <img
                 class="section3__menu__img"
-                src="./images1/img(16).jpg"
+                srcset="
+                  ./images1/service1-1x.jpg 1x,
+                  ./images1/service1-2x.jpg 2x
+                "
+                src="./images1/service1-1x.jpg"
                 alt="table with computer and hands"
               />
               <h3 class="section3__item__title">Десктопні додатки</h3>
@@ -196,7 +229,11 @@
             <li class="section3__menu__item">
               <img
                 class="section3__menu__img"
-                src="./images1/img(17).jpg"
+                srcset="
+                  ./images1/service2-1x.jpg 1x,
+                  ./images1/service2-2x.jpg 2x
+                "
+                src="./images1/service2-1x.jpg"
                 alt="mobile phone with all colors over computer"
               />
               <h3 class="section3__item__title">Мобільні додатки</h3>
@@ -204,7 +241,11 @@
             <li class="section3__menu__item">
               <img
                 class="section3__menu__img"
-                src="./images1/img(1).jpg"
+                srcset="
+                  ./images1/service3-1x.jpg 1x,
+                  ./images1/service3-2x.jpg 2x
+                "
+                src="./images1/service3-1x.jpg"
                 alt="man with laptop"
               />
               <h3 class="section3__item__title">Дизайнерські рішення</h3>
@@ -219,7 +260,8 @@
             <li class="section4__menu__item">
               <img
                 class="section4__menu__img"
-                src="./images1/img(2).jpg"
+                srcset="./images1/team1-1x.jpg 1x, ./images1/team1-2x.jpg 2x"
+                src="./images1/team1-1x.jpg"
                 alt="smiling man"
               />
               <h3 class="section4__menu__title">Ігор Дем'яненко</h3>
@@ -250,7 +292,8 @@
             <li class="section4__menu__item">
               <img
                 class="section4__menu__img"
-                src="./images1/img(3).jpg"
+                srcset="./images1/team2-1x.jpg 1x, ./images1/team2-2x.jpg 2x"
+                src="./images1/team2-1x.jpg"
                 alt="smiling woman"
               />
               <h3 class="section4__menu__title">Ольга Рєпіна</h3>
@@ -281,7 +324,8 @@
             <li class="section4__menu__item">
               <img
                 class="section4__menu__img"
-                src="./images1/img(4).jpg"
+                srcset="./images1/team3-1x.jpg 1x, ./images1/team3-2x.jpg 2x"
+                src="./images1/team3-1x.jpg"
                 alt="smiling man"
               />
               <h3 class="section4__menu__title">Микола Тарасов</h3>
@@ -312,7 +356,8 @@
             <li class="section4__menu__item">
               <img
                 class="section4__menu__img"
-                src="./images1/img(5).jpg"
+                srcset="./images1/team4-1x.jpg 1x, ./images1/team4-2x.jpg 2x"
+                src="./images1/team4-1x.jpg"
                 alt="man in black t-shirt"
               />
               <h3 class="section4__menu__title">Михайло Єрмаков</h3>
@@ -429,21 +474,86 @@
           </ul>
         </div>
         <div class="footer__sub">
-          <h3 class="sub__title">Підпишіться на розсилку</h3>
           <div class="footer__fill">
+            <h3 class="sub__title">Підпишіться на розсилку</h3>
             <label class="footer__label" for="">
               <input class="footer__input" placeholder="E-mail" type="email" />
             </label>
-            <div class="footer__send">
-              <button class="footer__send__button">Підписатися</button>
-              <svg class="footer__send__svg" width="20" height="20">
-                <use href="./icons/symbol.svg#icon-send"></use>
-              </svg>
-            </div>
+          </div>
+          <div class="footer__send">
+            <button class="footer__send__button">Підписатися</button>
+            <svg class="footer__send__svg" width="20" height="20">
+              <use href="./icons/symbol.svg#icon-send"></use>
+            </svg>
           </div>
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="close-mobile-menu"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu__fill">
+        <ul class="menu-mobile">
+          <li class="menu-mobile__item">
+            <a href="./index.html" class="menu-mobile__link">Студія</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="./portfolio.html" class="menu-mobile__link">Портфоліо</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Портфоліо</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__tel">
+            <a href="tel+380961111111" class="mobile-contacts__link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__mail">
+            <a href="mailto:info@devstudio" class="mobile-contacts__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="header-medias">
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">Instagram</a>
+          </li>
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">Twitter</a>
+          </li>
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">Facebook</a>
+          </li>
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

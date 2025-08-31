@@ -5,8 +5,24 @@
   margin-left: auto;
   margin-right: auto;
   background-color: $dark-bg-color;
-  background-image: url(../images1/ImgOverlay.png),
-    url(../images1/Img\(18\).jpg);
+  background-image: image-set(
+    url(../images1/sect1-mobile-1x.jpg) 1x,
+    url(../images1/sect1-mobile-1x.jpg) 2x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width:768px){
+      background-image: image-set(
+    url(../images1/sect1-tab-1x.jpg) 1x,
+    url(../images1/sect1-tab-1x.jpg) 2x
+    );
+    }
+    @media screen and (min-width:1200px){
+      background-image: image-set(
+    url(../images1/sect1-1x.jpg) 1x,
+    url(../images1/sect1-1x.jpg) 2x
+    );
+    }
 
   .section1__title {
     color: $secondary-text-color;

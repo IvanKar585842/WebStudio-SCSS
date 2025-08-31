@@ -54,11 +54,69 @@
             >
           </li>
         </ul>
-        <a href="" class="header__mobile-menu">
-          <svg class="menu-mobile" width="24px" height="16px">
+        <button
+          href=""
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <!-- <svg class="header__mobile-menu" width="24px" height="16px">
             <use href="./icons/symbol.svg#icon-menu-mobile"></use>
+          </svg> -->
+          <svg
+            class="open-mobile-menu"
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
           </svg>
-        </a>
+        </button>
+        <div class="mobile-menu__fill">
+          <ul class="menu-mobile">
+            <li class="menu-mobile__item">
+              <a href="./index.html" class="menu-mobile__link">Студія</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="./portfolio.html" class="menu-mobile__link">Портфоліо</a>
+            </li>
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li class="mobile-contacts__tel">
+              <a href="tel+380961111111" class="mobile-contacts__link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__mail">
+              <a href="mailto:info@devstudio" class="mobile-contacts__link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="header-medias">
+            <li class="header-medias__item">
+              <a href="" class="header-medias__link">Instagram</a>
+            </li>
+            <li class="header-medias__item">
+              <a href="" class="header-medias__link">Twitter</a>
+            </li>
+            <li class="header-medias__item">
+              <a href="" class="header-medias__link">Facebook</a>
+            </li>
+            <li class="header-medias__item">
+              <a href="" class="header-medias__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -87,7 +145,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(7).jpg"
+                  srcset="./images1/portfolio1-1x.jpg 1x, ./images1/portfolio1-2x.jpg 2x"
+                  src="./images1/portfolio1-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -103,7 +162,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(8).jpg"
+                  srcset="./images1/portfolio2-1x.jpg 1x, ./images1/portfolio2-2x.jpg 2x"
+                  src="./images1/portfolio2-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -112,14 +172,17 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu__cards__item__title">Постер New Orlean vs Golden Star</h3>
+              <h3 class="menu__cards__item__title">
+                Постер New Orlean vs Golden Star
+              </h3>
               <p class="menu__cards__item__text">Дизайн</p>
             </li>
             <li class="menu__cards__item">
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(9).jpg"
+                  srcset="./images1/portfolio3-1x.jpg 1x, ./images1/portfolio3-2x.jpg 2x"
+                  src="./images1/portfolio3-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -135,7 +198,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(10).jpg"
+                  srcset="./images1/portfolio4-1x.jpg 1x, ./images1/portfolio4-2x.jpg 2x"
+                  src="./images1/portfolio4-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -151,7 +215,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(11).jpg"
+                  srcset="./images1/portfolio5-1x.jpg 1x, ./images1/portfolio5-2x.jpg 2x"
+                  src="./images1/portfolio5-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -167,7 +232,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(12).jpg"
+                  srcset="./images1/portfolio6-1x.jpg 1x, ./images1/portfolio6-2x.jpg 2x"
+                  src="./images1/portfolio6-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -176,14 +242,17 @@
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="menu__cards__item__title">Inspiration has no Borders</h3>
+              <h3 class="menu__cards__item__title">
+                Inspiration has no Borders
+              </h3>
               <p class="menu__cards__item__text">Веб-сайт</p>
             </li>
             <li class="menu__cards__item">
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(13).jpg"
+                  srcset="./images1/portfolio7-1x.jpg 1x, ./images1/portfolio7-2x.jpg 2x"
+                  src="./images1/portfolio7-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -199,7 +268,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(14).jpg"
+                  srcset="./images1/portfolio8-1x.jpg 1x, ./images1/portfolio8-2x.jpg 2x"
+                  src="./images1/portfolio8-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -215,7 +285,8 @@
               <div class="cards__overlay">
                 <img
                   class="menu__cards__img"
-                  src="./images1/img(15).jpg"
+                  srcset="./images1/portfolio9-1x.jpg 1x, ./images1/portfolio9-2x.jpg 2x"
+                  src="./images1/portfolio9-1x.jpg"
                   alt="Технокряк"
                 />
                 <p class="overlay__text">
@@ -281,11 +352,12 @@
           </ul>
         </div>
         <div class="footer__sub">
-          <h3 class="sub__title">Підпишіться на розсилку</h3>
           <div class="footer__fill">
+            <h3 class="sub__title">Підпишіться на розсилку</h3>
             <label class="footer__label" for="">
               <input class="footer__input" placeholder="E-mail" type="email" />
             </label>
+
             <div class="footer__send">
               <button class="footer__send__button">Підписатися</button>
               <svg class="footer__send__svg" width="20" height="20">
@@ -296,5 +368,70 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="close-mobile-menu"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu__fill">
+        <ul class="menu-mobile">
+          <li class="menu-mobile__item">
+            <a href="./index.html" class="menu-mobile__link">Студія</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="./portfolio.html" class="menu-mobile__link">Портфоліо</a>
+          </li>
+          <li class="menu-mobile__item">
+            <a href="#" class="menu-mobile__link">Портфоліо</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__tel">
+            <a href="tel+380961111111" class="mobile-contacts__link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-contacts__mail">
+            <a href="mailto:info@devstudio" class="mobile-contacts__link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="header-medias">
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">Instagram</a>
+          </li>
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">Twitter</a>
+          </li>
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">Facebook</a>
+          </li>
+          <li class="header-medias__item">
+            <a href="" class="header-medias__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -37,14 +37,19 @@
   row-gap: 30px;
   column-gap: 30px;
   .menu__cards__item {
-    width: 370px;
-    height: 404px;
+    // width: 370px;
+    // height: 404px;
     border: 1px solid #eee;
-    flex-basis: calc((100%) / 1);
+    
     box-shadow: 0px 2px 2px rgb(111, 111, 111);
     &:hover,
     &:focus {
       box-shadow: 0 0 10px gray;
+    }
+    @media screen and (max-width:767px){
+      .menu__cards__item{
+        flex-basis: calc((100%) / 1);
+      }
     }
     .menu__cards__img {
       width: 370px;
@@ -98,11 +103,11 @@
 .cards__overlay:focus .overlay__text {
   transform: translateY(0);
 }
-@media screen and (min-width: 768px){
-    .menu__cards__item{
-    flex-basis: calc((100% - 2 * 30px) / 3);
-  }
-}
+// @media screen and(min-width:768px) and (max-width: 1199px){
+//     .menu__cards__item{
+//     flex-basis: calc((100% - 2 * 30px) / 2);
+//   }
+// }
 @media screen and (min-width: 1200px){
   .menu__list{
     flex-wrap: nowrap;
